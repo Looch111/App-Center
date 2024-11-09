@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Promotion Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Dark/Light Mode Toggle -->
+        <div class="theme-toggle">
+            <label class="switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider round"></span>
+            </label>
+            <span>Dark Mode</span>
+        </div>
+
+        <!-- Search and Category Bar -->
+        <div class="top-bar">
+            <input type="text" placeholder="Search">
+            <div class="categories">
+                <div class="category">Games</div>
+                <div class="category">Utilities</div>
+                <div class="category">Web3</div>
+            </div>
+        </div>
+
+        <!-- Banner Section -->
+        <div class="banner">
+            <img src="Image/Paws-telegram.jpeg" class="feature-card-image">
+            <span class="banner-label">NEW ON TON</span>
+            <h1 class="animated-text">Earn more this season with Paws 🐾</h1>
+            <div class="banner-action">
+                <div class="banner-logo">
+                    <img src="Image/Paws-Profile.jpg" alt="Logo">
+                </div>
+                <div>
+                    <h2>PAWS 🐾</h2>
+                    <p>Find amazing cashback deals</p>
+                </div>
+                <button class="open-button" onclick="showModal('TONCA$H')">OPEN</button>
+            </div>
+        </div>
+
+        <!-- Trending Section -->
+        <div class="trending-section">
+            <h2>Trending This Week</h2>
+            <span class="see-all">See All</span>
+            <!-- Trending Items with Badges -->
+            <div class="trending-item">
+                <div class="banner-logo"><img src="Image/Paws-Profile.jpg" alt="Logo"></div>
+                <div>
+                  
+                    <h3>PAWS 🐾 <span class="badge">New</span></h3>
+                    <p>Earning of the season...</p>
+                </div>
+                <button class="open-button" onclick="showModal('Gatto')">OPEN</button>
+            </div>
+            <div class="trending-item">
+                <div class="banner-logo"><img src="Image/Blum-Profile.jpg" alt="Logo"></div>
+                <div>
+                    <h3>BLUM <span class="badge">Verified</span></h3>
+                    <p>BLUM is a mini-app that...</p>
+                </div>
+                <button class="open-button" onclick="showModal('PAWS')">OPEN</button>
+            </div>
+            <div class="trending-item">
+                <div class="banner-logo"><img src="Image/Seed-Profile.jpg" alt="Logo"></div>
+                <div>
+                    <h3>SEED<span class="badge">Verified</span></h3>
+                    <p>Self-managed, millions of...</p>
+                </div>
+                <button class="open-button" onclick="showModal('OKX Wallet')">OPEN</button>
+            </div>
+            <div class="trending-item">
+                <div class="banner-logo"><img src="Image/Coub-Profile.jpg" alt="Logo"></div>
+                <div>
+                    <h3>COUB<span class="badge">Verified</span></h3>
+                    <p>Self-managed, millions of...</p>
+                </div>
+                <button class="open-button" onclick="showModal('OKX Wallet')">OPEN</button>
+            </div>
+            <div class="trending-item">
+                <div class="banner-logo"><img src="Image/Hot-Profile.jpg" alt="Logo"></div>
+                <div>
+                    <h3>HOT Wallet<span class="badge">Verified</span></h3>
+                    <p>Self-managed, millions of...</p>
+                </div>
+                <button class="open-button" onclick="showModal('OKX Wallet')">OPEN</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Popup -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p>Thanks For Joining The Mini-App
+            More Features Coming Soon..</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
